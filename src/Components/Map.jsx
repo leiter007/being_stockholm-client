@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import MapStyle from '../Modules/MapStyle'
-import { Icon } from 'semantic-ui-react';
-
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import { Icon, Segment, Button } from 'semantic-ui-react';
 
 class Map extends Component {
   static defaultProps = {
@@ -32,11 +30,6 @@ class Map extends Component {
           defaultZoom={this.props.zoom}
           options={{ styles: MapStyle }}
         >
-          {/* <AnyReactComponent
-            lat={59.330651}
-            lng={18.068562}
-            text="Hello Sthml!"
-          /> */}
 
         </GoogleMapReact>
       </div>

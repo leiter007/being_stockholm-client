@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import { Grid, Header } from 'semantic-ui-react';
+import { Grid, Header, Segment, Button } from 'semantic-ui-react';
 import { Link } from 'react-router-dom'
 
 class Footer extends Component {
   render() {
     return (
+    <>
+        <Button
+          onClick={this.props.handleLegendChange('overlay')}
+        />
 
       <Grid
         id='footer'
@@ -42,6 +46,8 @@ class Footer extends Component {
         </Grid.Column>
 
       </Grid>
+
+    </>
     )
   }
 }
